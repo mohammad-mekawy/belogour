@@ -8,6 +8,7 @@ $name = "";
 $email = "";
 $phone = "";
 $message = "";
+$company = "";
 
 if( isset($_POST['name']) ){
     $name = $_POST['name'];
@@ -35,12 +36,21 @@ if( isset($_POST['phone']) ){
     $body .= $phone;
     $body .= "\n\n";
 }
+if( isset($_POST['company']) ){
+    $message = $_POST['company'];
+    //echo $message;
+
+    $body .= "";
+    $body .= "company: ";
+    $body .= $company;
+    $body .= "\n\n";
+}
 if( isset($_POST['message']) ){
     $message = $_POST['message'];
     //echo $message;
 
     $body .= "";
-    $body .= "Message: ";
+    $body .= "message: ";
     $body .= $message;
     $body .= "\n\n";
 }

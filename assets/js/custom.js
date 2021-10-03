@@ -193,11 +193,13 @@ $(document).ready(function($) {
                 nav: 0,
                 dots: 1,
                 autoHeight: true,
-                navText: []
+                navText: [],
             });
         }
     });
 
+// onclick toggle class
+$('.btn-call-float').on('click', function(e) { $('.call-float-div').toggleClass('call-close'); });
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
